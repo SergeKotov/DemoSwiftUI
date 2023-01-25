@@ -7,18 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3608D195297FD19600ECD08B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D194297FD19600ECD08B /* Post.swift */; };
+		3608D197297FD27B00ECD08B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D196297FD27B00ECD08B /* Data.swift */; };
+		3608D199297FD3A500ECD08B /* InfoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D198297FD3A500ECD08B /* InfoDetails.swift */; };
+		3608D19B297FD4AD00ECD08B /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D19A297FD4AD00ECD08B /* InfoRow.swift */; };
+		3608D19D298028E300ECD08B /* LogoScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D19C298028E300ECD08B /* LogoScene.swift */; };
 		36B3D6CF297E851D00086742 /* DemoSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3D6CE297E851D00086742 /* DemoSwiftUIApp.swift */; };
 		36B3D6D1297E851D00086742 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3D6D0297E851D00086742 /* ContentView.swift */; };
 		36B3D6D3297E851D00086742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B3D6D2297E851D00086742 /* Assets.xcassets */; };
 		36B3D6D6297E851D00086742 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B3D6D5297E851D00086742 /* Preview Assets.xcassets */; };
+		36B3D6DE297E8A3B00086742 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3D6DD297E8A3B00086742 /* LoginView.swift */; };
+		36B3D6E4297E8ADD00086742 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3D6E3297E8ADD00086742 /* SettingsView.swift */; };
+		36B3D6E6297E8AEB00086742 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3D6E5297E8AEB00086742 /* InfoView.swift */; };
+		36B3D6E8297E953100086742 /* TextFielder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3D6E7297E953100086742 /* TextFielder.swift */; };
+		36B3D6EA297E9F9E00086742 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3D6E9297E9F9E00086742 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3608D194297FD19600ECD08B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3608D196297FD27B00ECD08B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		3608D198297FD3A500ECD08B /* InfoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetails.swift; sourceTree = "<group>"; };
+		3608D19A297FD4AD00ECD08B /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		3608D19C298028E300ECD08B /* LogoScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoScene.swift; sourceTree = "<group>"; };
 		36B3D6CB297E851D00086742 /* DemoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B3D6CE297E851D00086742 /* DemoSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSwiftUIApp.swift; sourceTree = "<group>"; };
 		36B3D6D0297E851D00086742 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		36B3D6D2297E851D00086742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36B3D6D5297E851D00086742 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		36B3D6DC297E883B00086742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		36B3D6DD297E8A3B00086742 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		36B3D6E3297E8ADD00086742 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		36B3D6E5297E8AEB00086742 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		36B3D6E7297E953100086742 /* TextFielder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFielder.swift; sourceTree = "<group>"; };
+		36B3D6E9297E9F9E00086742 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3608D193297FD16800ECD08B /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3608D194297FD19600ECD08B /* Post.swift */,
+				3608D196297FD27B00ECD08B /* Data.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		36B3D6C2297E851D00086742 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +81,18 @@
 		36B3D6CD297E851D00086742 /* DemoSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				36B3D6DC297E883B00086742 /* Info.plist */,
 				36B3D6CE297E851D00086742 /* DemoSwiftUIApp.swift */,
 				36B3D6D0297E851D00086742 /* ContentView.swift */,
+				36B3D6DD297E8A3B00086742 /* LoginView.swift */,
+				36B3D6E9297E9F9E00086742 /* ProfileView.swift */,
+				36B3D6E3297E8ADD00086742 /* SettingsView.swift */,
+				36B3D6E5297E8AEB00086742 /* InfoView.swift */,
+				3608D19A297FD4AD00ECD08B /* InfoRow.swift */,
+				3608D198297FD3A500ECD08B /* InfoDetails.swift */,
+				36B3D6E7297E953100086742 /* TextFielder.swift */,
+				3608D19C298028E300ECD08B /* LogoScene.swift */,
+				3608D193297FD16800ECD08B /* DataModel */,
 				36B3D6D2297E851D00086742 /* Assets.xcassets */,
 				36B3D6D4297E851D00086742 /* Preview Content */,
 			);
@@ -137,7 +177,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36B3D6E8297E953100086742 /* TextFielder.swift in Sources */,
+				36B3D6DE297E8A3B00086742 /* LoginView.swift in Sources */,
+				3608D199297FD3A500ECD08B /* InfoDetails.swift in Sources */,
+				36B3D6E4297E8ADD00086742 /* SettingsView.swift in Sources */,
 				36B3D6D1297E851D00086742 /* ContentView.swift in Sources */,
+				36B3D6E6297E8AEB00086742 /* InfoView.swift in Sources */,
+				3608D195297FD19600ECD08B /* Post.swift in Sources */,
+				36B3D6EA297E9F9E00086742 /* ProfileView.swift in Sources */,
+				3608D19B297FD4AD00ECD08B /* InfoRow.swift in Sources */,
+				3608D197297FD27B00ECD08B /* Data.swift in Sources */,
+				3608D19D298028E300ECD08B /* LogoScene.swift in Sources */,
 				36B3D6CF297E851D00086742 /* DemoSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -267,10 +317,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = G7Z6P28QM9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = DemoSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -296,10 +346,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = G7Z6P28QM9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = DemoSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

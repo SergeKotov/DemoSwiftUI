@@ -8,14 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isLogin = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView() {
+            if isLogin {
+                ProfileView()
+                    .tabItem {
+                        Label("Profile", systemImage: "person.fill.checkmark")
+                    }
+            } else {
+                LoginView(logged: $isLogin)
+                    .tabItem {
+                        Label("Login", systemImage: "person")
+                    }
+            }
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "menucard")
+                }
+            InfoView()
+                .tabItem {
+                    Label("Anthropology", systemImage: "globe")
+                }
         }
-        .padding()
     }
 }
 
