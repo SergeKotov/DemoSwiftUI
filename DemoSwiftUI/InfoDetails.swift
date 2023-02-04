@@ -27,13 +27,10 @@ struct InfoDetails: View {
                 Divider()
                 
                 Text(post.description)
-                
-                Spacer()                
             }
             .padding()
         }
         .navigationTitle(post.title)
-        .navigationBarTitleDisplayMode(.inline)
         .background(Color(.systemGray6))
     }
 }

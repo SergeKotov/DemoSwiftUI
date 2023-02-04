@@ -15,32 +15,37 @@ struct SettingsView: View {
     @State private var isChanging = false
     
     var body: some View {
-        Form {
-            Section {
-                Toggle(isOn: $notificationsOn) {
-                    Text("Push Notifications")
-                }
-                Toggle(isOn: $darkOn) {
-                    Text("Dark Theme")
-                }
-            }
+        ZStack {
+            Color(darkOn ? .black : .white)
             
-            Slider(value: $sliderValue, in: 0 ... 100) { changed in
-                isChanging = changed
-            }
-            Text("Progress value: \(Int(sliderValue))")
-                .foregroundColor(.secondary)
-            
-            Section {
-                VStack(alignment: .leading) {
+            Form {
+                Section {
+                    Toggle(isOn: $notificationsOn) {
+                        Text("Push Notifications")
+                    }
+                    Toggle(isOn: $darkOn) {
+                        Text("Dark Theme")
+                    }
+                }
+                .foregroundColor( Color(notificationsOn ? .darkGray : .blue) )
+                
+                Slider(value: $sliderValue, in: 0 ... 100) { changed in
+                    isChanging = changed
+                }
+                Text("Progress value: \(Int(sliderValue))")
+                    .foregroundColor(.secondary)
+                
+                ZStack {
+                    AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .red]), center: .center, angle: Angle(radians: sliderValue/10))
+                        .ignoresSafeArea(edges: .top)
+                    
                     Text("\(isChanging ? "I Like to Move It" : "I see you")")
-                        .font(.title2)
-                        .foregroundColor(isChanging ? .red : .blue)
-                    Text("Font: caption style")
-                        .font(.caption)
-                        .padding(.top)
+                        .font(.title)
+                        .foregroundColor(.white)
                 }
+                .frame(height: 200)
             }
+            .scrollContentBackground(.hidden)
         }
     }
 }

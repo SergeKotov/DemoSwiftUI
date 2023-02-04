@@ -15,8 +15,13 @@ struct ProfileView: View {
     var body: some View {
         ZStack {
             GeometryReader { geo in
-                SpriteView(scene: StarsScene.getScene(size: geo.size))
-                    .frame(width: geo.size.width, height: geo.size.height)
+                if showingAlert {
+                    SpriteView(scene: StarsScene.getScene(size: geo.size, 1))
+                        .frame(width: geo.size.width, height: geo.size.height)
+                } else {
+                    SpriteView(scene: StarsScene.getScene(size: geo.size, 2))
+                        .frame(width: geo.size.width, height: geo.size.height)
+                }
             }
             .ignoresSafeArea()
             
