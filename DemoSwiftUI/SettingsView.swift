@@ -20,14 +20,12 @@ struct SettingsView: View {
             
             Form {
                 Section {
-                    Toggle(isOn: $notificationsOn) {
-                        Text("Push Notifications")
+                    Toggle("Push Notifications", isOn: $notificationsOn.animation())
+                    if notificationsOn {
+                        Text("Notifications enabled")
                     }
-                    Toggle(isOn: $darkOn) {
-                        Text("Dark Theme")
-                    }
+                    Toggle("Dark Theme", isOn: $darkOn.animation())
                 }
-                .foregroundColor( Color(notificationsOn ? .darkGray : .blue) )
                 
                 Slider(value: $sliderValue, in: 0 ... 100) { changed in
                     isChanging = changed
