@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     @State private var notificationsOn = true
     @State private var darkOn = false
     
@@ -25,6 +27,10 @@ struct SettingsView: View {
                         Text("Notifications enabled")
                     }
                     Toggle("Dark Theme", isOn: $darkOn.animation())
+                }
+                
+                Section {
+                    Text(colorScheme == .dark ? "iOS set in dark mode" : "iOS set in light mode")
                 }
                 
                 Slider(value: $sliderValue, in: 0 ... 100) { changed in

@@ -24,13 +24,17 @@ struct ContentView: View {
                         Label("Login", systemImage: "person")
                     }
             }
+            EarthView()
+                .tabItem {
+                    Label("ЗD Planet", systemImage: "globe")
+                }
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "menucard")
                 }
             InfoView()
                 .tabItem {
-                    Label("Anthropology", systemImage: "globe")
+                    Label("Anthropology", systemImage: "globe.europe.africa.fill")
                 }
         }
     }

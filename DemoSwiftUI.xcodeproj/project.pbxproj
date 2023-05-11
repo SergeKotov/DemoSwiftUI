@@ -23,6 +23,8 @@
 		36B3D6E6297E8AEB00086742 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3D6E5297E8AEB00086742 /* InfoView.swift */; };
 		36B3D6E8297E953100086742 /* TextFielder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3D6E7297E953100086742 /* TextFielder.swift */; };
 		36B3D6EA297E9F9E00086742 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3D6E9297E9F9E00086742 /* ProfileView.swift */; };
+		36B9FDED2A0D2D2B004F8FAF /* EarthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B9FDEC2A0D2D2B004F8FAF /* EarthView.swift */; };
+		36B9FDEF2A0D2DEA004F8FAF /* PlanetScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B9FDEE2A0D2DEA004F8FAF /* PlanetScene.swift */; };
 		36CEF090298D4831002743C7 /* Shaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CEF08F298D4831002743C7 /* Shaders.swift */; };
 		36D993D829BF4CE4006653F7 /* AnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D993D729BF4CE4006653F7 /* AnimatedView.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		36B3D6E5297E8AEB00086742 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		36B3D6E7297E953100086742 /* TextFielder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFielder.swift; sourceTree = "<group>"; };
 		36B3D6E9297E9F9E00086742 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		36B9FDEC2A0D2D2B004F8FAF /* EarthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthView.swift; sourceTree = "<group>"; };
+		36B9FDEE2A0D2DEA004F8FAF /* PlanetScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetScene.swift; sourceTree = "<group>"; };
 		36CEF08F298D4831002743C7 /* Shaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shaders.swift; sourceTree = "<group>"; };
 		36D993D729BF4CE4006653F7 /* AnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,10 +101,12 @@
 				36B3D6DD297E8A3B00086742 /* LoginView.swift */,
 				36B3D6E9297E9F9E00086742 /* ProfileView.swift */,
 				36B3D6E3297E8ADD00086742 /* SettingsView.swift */,
+				36B9FDEC2A0D2D2B004F8FAF /* EarthView.swift */,
 				36B3D6E5297E8AEB00086742 /* InfoView.swift */,
 				3608D19A297FD4AD00ECD08B /* InfoRow.swift */,
 				3608D198297FD3A500ECD08B /* InfoDetails.swift */,
 				36B3D6E7297E953100086742 /* TextFielder.swift */,
+				36B9FDEE2A0D2DEA004F8FAF /* PlanetScene.swift */,
 				3608D19C298028E300ECD08B /* StarsScene.swift */,
 				36D993D729BF4CE4006653F7 /* AnimatedView.swift */,
 				3690CFA729C054B5004A624A /* BarChartView.swift */,
@@ -192,6 +198,7 @@
 				36B3D6E8297E953100086742 /* TextFielder.swift in Sources */,
 				36B3D6DE297E8A3B00086742 /* LoginView.swift in Sources */,
 				3608D199297FD3A500ECD08B /* InfoDetails.swift in Sources */,
+				36B9FDED2A0D2D2B004F8FAF /* EarthView.swift in Sources */,
 				36B3D6E4297E8ADD00086742 /* SettingsView.swift in Sources */,
 				36B3D6D1297E851D00086742 /* ContentView.swift in Sources */,
 				36B3D6E6297E8AEB00086742 /* InfoView.swift in Sources */,
@@ -204,6 +211,7 @@
 				3608D197297FD27B00ECD08B /* Data.swift in Sources */,
 				3608D19D298028E300ECD08B /* StarsScene.swift in Sources */,
 				36D993D829BF4CE4006653F7 /* AnimatedView.swift in Sources */,
+				36B9FDEF2A0D2DEA004F8FAF /* PlanetScene.swift in Sources */,
 				36B3D6CF297E851D00086742 /* DemoSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
