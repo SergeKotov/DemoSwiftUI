@@ -8,6 +8,8 @@
 import SceneKit
 import SwiftUI
 
+// A simple example of SceneKit's scene with 3D model of Earth
+
 class PlanetScene: SCNScene {
   
   override init() {
@@ -31,7 +33,8 @@ class PlanetScene: SCNScene {
       let directionalLight = SCNNode()
       directionalLight.light = SCNLight()
       directionalLight.light!.type = .directional
-      directionalLight.eulerAngles = SCNVector3(x: 0, y: 0, z: 0)
+      directionalLight.light!.temperature = 5500
+      directionalLight.eulerAngles = SCNVector3(x: 0, y: 0, z: 50)
       
       let cameraNode = SCNNode()
       cameraNode.camera = SCNCamera()

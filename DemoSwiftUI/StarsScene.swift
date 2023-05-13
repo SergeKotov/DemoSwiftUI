@@ -7,6 +7,8 @@
 
 import SpriteKit
 
+// A simple example of SpriteKit's scene with two shaders
+
 final class StarsScene: SKScene {
     
     var shaderNum = 1

@@ -2,7 +2,7 @@
 //  BarChartView.swift
 //  DemoSwiftUI
 //
-//  Created by Serge Kotov on 14.03.2023.
+//  Created by Serge Kotov on 12.05.2023.
 //
 
 import SwiftUI
@@ -10,25 +10,22 @@ import Charts
 
 struct BarChartView: View {
     var body: some View {
-        VStack {            
+        VStack {
             Chart {
-                ForEach(stackedBarData) { shape in
+                ForEach(Post.data) { shape in
                     BarMark(
-                        x: .value("Shape Type", shape.type),
-                        y: .value("Total Count", shape.count)
+                        x: .value("Shape Type", shape.title),
+                        y: .value("Total Count", shape.description.count)
                     )
-                    .foregroundStyle(by: .value("Shape Color", shape.color))
+                    .foregroundStyle(by: .value("Shape Color", shape.age))
                 }
             }
             .chartForegroundStyleScale([
-                "Green": .green, "Purple": .purple, "Pink": .pink, "Yellow": .yellow
+                "Archaic": .brown, "Enlightenment": .purple, "Nature": .mint, "Computer": .pink
             ])
             
-            Text("SwiftUI Charts demo")
-                .font(.title)
-                .padding()
+            Text("Statistics")
         }
-        .padding()
     }
 }
 

@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3608D195297FD19600ECD08B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D194297FD19600ECD08B /* Post.swift */; };
-		3608D197297FD27B00ECD08B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D196297FD27B00ECD08B /* Data.swift */; };
-		3608D199297FD3A500ECD08B /* InfoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D198297FD3A500ECD08B /* InfoDetails.swift */; };
-		3608D19B297FD4AD00ECD08B /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D19A297FD4AD00ECD08B /* InfoRow.swift */; };
+		3608D199297FD3A500ECD08B /* InfoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D198297FD3A500ECD08B /* InfoDetailsView.swift */; };
+		3608D19B297FD4AD00ECD08B /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D19A297FD4AD00ECD08B /* InfoRowView.swift */; };
 		3608D19D298028E300ECD08B /* StarsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D19C298028E300ECD08B /* StarsScene.swift */; };
-		3690CFA829C054B5004A624A /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3690CFA729C054B5004A624A /* BarChartView.swift */; };
-		3690CFAA29C05505004A624A /* ToyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3690CFA929C05505004A624A /* ToyShape.swift */; };
+		365D0B592A0E39FF00C42C76 /* LinkToAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365D0B582A0E39FF00C42C76 /* LinkToAppView.swift */; };
+		367918742A0E6DF4000E89CD /* AppInStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367918732A0E6DF4000E89CD /* AppInStore.swift */; };
+		36A79BA32A0E802C00C3D0CA /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A79BA22A0E802C00C3D0CA /* BarChartView.swift */; };
 		36B3D6CF297E851D00086742 /* DemoSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3D6CE297E851D00086742 /* DemoSwiftUIApp.swift */; };
 		36B3D6D1297E851D00086742 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3D6D0297E851D00086742 /* ContentView.swift */; };
 		36B3D6D3297E851D00086742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B3D6D2297E851D00086742 /* Assets.xcassets */; };
@@ -26,17 +26,16 @@
 		36B9FDED2A0D2D2B004F8FAF /* EarthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B9FDEC2A0D2D2B004F8FAF /* EarthView.swift */; };
 		36B9FDEF2A0D2DEA004F8FAF /* PlanetScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B9FDEE2A0D2DEA004F8FAF /* PlanetScene.swift */; };
 		36CEF090298D4831002743C7 /* Shaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CEF08F298D4831002743C7 /* Shaders.swift */; };
-		36D993D829BF4CE4006653F7 /* AnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D993D729BF4CE4006653F7 /* AnimatedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3608D194297FD19600ECD08B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		3608D196297FD27B00ECD08B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		3608D198297FD3A500ECD08B /* InfoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetails.swift; sourceTree = "<group>"; };
-		3608D19A297FD4AD00ECD08B /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		3608D198297FD3A500ECD08B /* InfoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailsView.swift; sourceTree = "<group>"; };
+		3608D19A297FD4AD00ECD08B /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowView.swift; sourceTree = "<group>"; };
 		3608D19C298028E300ECD08B /* StarsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsScene.swift; sourceTree = "<group>"; };
-		3690CFA729C054B5004A624A /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
-		3690CFA929C05505004A624A /* ToyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyShape.swift; sourceTree = "<group>"; };
+		365D0B582A0E39FF00C42C76 /* LinkToAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkToAppView.swift; sourceTree = "<group>"; };
+		367918732A0E6DF4000E89CD /* AppInStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInStore.swift; sourceTree = "<group>"; };
+		36A79BA22A0E802C00C3D0CA /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		36B3D6CB297E851D00086742 /* DemoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B3D6CE297E851D00086742 /* DemoSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSwiftUIApp.swift; sourceTree = "<group>"; };
 		36B3D6D0297E851D00086742 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,7 +50,6 @@
 		36B9FDEC2A0D2D2B004F8FAF /* EarthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthView.swift; sourceTree = "<group>"; };
 		36B9FDEE2A0D2DEA004F8FAF /* PlanetScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetScene.swift; sourceTree = "<group>"; };
 		36CEF08F298D4831002743C7 /* Shaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shaders.swift; sourceTree = "<group>"; };
-		36D993D729BF4CE4006653F7 /* AnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,10 +66,9 @@
 		3608D193297FD16800ECD08B /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				367918732A0E6DF4000E89CD /* AppInStore.swift */,
 				3608D194297FD19600ECD08B /* Post.swift */,
-				3608D196297FD27B00ECD08B /* Data.swift */,
 				36CEF08F298D4831002743C7 /* Shaders.swift */,
-				3690CFA929C05505004A624A /* ToyShape.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -103,13 +100,13 @@
 				36B3D6E3297E8ADD00086742 /* SettingsView.swift */,
 				36B9FDEC2A0D2D2B004F8FAF /* EarthView.swift */,
 				36B3D6E5297E8AEB00086742 /* InfoView.swift */,
-				3608D19A297FD4AD00ECD08B /* InfoRow.swift */,
-				3608D198297FD3A500ECD08B /* InfoDetails.swift */,
+				3608D19A297FD4AD00ECD08B /* InfoRowView.swift */,
+				3608D198297FD3A500ECD08B /* InfoDetailsView.swift */,
+				365D0B582A0E39FF00C42C76 /* LinkToAppView.swift */,
+				36A79BA22A0E802C00C3D0CA /* BarChartView.swift */,
 				36B3D6E7297E953100086742 /* TextFielder.swift */,
 				36B9FDEE2A0D2DEA004F8FAF /* PlanetScene.swift */,
 				3608D19C298028E300ECD08B /* StarsScene.swift */,
-				36D993D729BF4CE4006653F7 /* AnimatedView.swift */,
-				3690CFA729C054B5004A624A /* BarChartView.swift */,
 				3608D193297FD16800ECD08B /* DataModel */,
 				36B3D6D2297E851D00086742 /* Assets.xcassets */,
 				36B3D6D4297E851D00086742 /* Preview Content */,
@@ -197,20 +194,19 @@
 			files = (
 				36B3D6E8297E953100086742 /* TextFielder.swift in Sources */,
 				36B3D6DE297E8A3B00086742 /* LoginView.swift in Sources */,
-				3608D199297FD3A500ECD08B /* InfoDetails.swift in Sources */,
+				3608D199297FD3A500ECD08B /* InfoDetailsView.swift in Sources */,
+				367918742A0E6DF4000E89CD /* AppInStore.swift in Sources */,
 				36B9FDED2A0D2D2B004F8FAF /* EarthView.swift in Sources */,
 				36B3D6E4297E8ADD00086742 /* SettingsView.swift in Sources */,
 				36B3D6D1297E851D00086742 /* ContentView.swift in Sources */,
+				36A79BA32A0E802C00C3D0CA /* BarChartView.swift in Sources */,
 				36B3D6E6297E8AEB00086742 /* InfoView.swift in Sources */,
-				3690CFAA29C05505004A624A /* ToyShape.swift in Sources */,
 				3608D195297FD19600ECD08B /* Post.swift in Sources */,
 				36B3D6EA297E9F9E00086742 /* ProfileView.swift in Sources */,
-				3690CFA829C054B5004A624A /* BarChartView.swift in Sources */,
-				3608D19B297FD4AD00ECD08B /* InfoRow.swift in Sources */,
+				3608D19B297FD4AD00ECD08B /* InfoRowView.swift in Sources */,
 				36CEF090298D4831002743C7 /* Shaders.swift in Sources */,
-				3608D197297FD27B00ECD08B /* Data.swift in Sources */,
 				3608D19D298028E300ECD08B /* StarsScene.swift in Sources */,
-				36D993D829BF4CE4006653F7 /* AnimatedView.swift in Sources */,
+				365D0B592A0E39FF00C42C76 /* LinkToAppView.swift in Sources */,
 				36B9FDEF2A0D2DEA004F8FAF /* PlanetScene.swift in Sources */,
 				36B3D6CF297E851D00086742 /* DemoSwiftUIApp.swift in Sources */,
 			);

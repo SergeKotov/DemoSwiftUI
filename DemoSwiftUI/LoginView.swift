@@ -15,17 +15,20 @@ struct LoginView: View {
     
     var body: some View {
         ZStack {
+            // beautiful color background
             AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .red]), center: .center, angle: Angle(radians: 1))
                 .ignoresSafeArea(edges: .top)
             
             VStack {
+                // avatar image
                 Image("teo")
                     .resizable()
                     .frame(width: 160, height: 160)
                     .cornerRadius(80)
                     .shadow(radius: 12)
                     .padding(.top, 20)
-                        
+                
+                // login and password text fields
                 VStack(spacing: -0.5) {
                     TextField("Login", text: $login)
                         .modifier(TextFielder())
@@ -34,9 +37,11 @@ struct LoginView: View {
                 }
                 .cornerRadius(12)
                 .padding(.top, 60)
-                .padding(16)
+                .padding()
                 
+                // login button
                 Button(action: {
+                    // no authentication actually, logged allways
                     self.logged = true
                 }) {
                     Text("Log In")
@@ -46,7 +51,7 @@ struct LoginView: View {
                 .frame(maxWidth: .infinity, maxHeight: 50)
                 .background(Color(.systemMint))
                 .cornerRadius(12)
-                .padding(16)
+                .padding()
                 
                 Spacer()
             }

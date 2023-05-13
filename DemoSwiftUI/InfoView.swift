@@ -9,13 +9,16 @@ import SwiftUI
 
 struct InfoView: View {
     var body: some View {
+        // navigation view for master - details architecture
         NavigationView {
-            List(data) { post in
-                    
+            // show the list of sample data
+            List(Post.data) { post in                    
                 NavigationLink {
-                    InfoDetails(post: post)
+                    // link to details view
+                    InfoDetailsView(post: post)
                 } label: {
-                   InfoRow(post: post)
+                    // view to represent one row of data with image and title
+                    InfoRowView(post: post)
                 }
             }
             .navigationTitle("Anthropology")

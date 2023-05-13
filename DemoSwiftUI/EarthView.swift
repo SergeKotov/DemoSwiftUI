@@ -9,11 +9,10 @@ import SwiftUI
 import SceneKit
 
 struct EarthView: View {
-    
-    let scene = PlanetScene()
-    
+        
     var body: some View {
-        SceneView(scene: scene, options: [.allowsCameraControl])
+        // Earth view done by 3D the SceneKit framework
+        SceneView(scene: PlanetScene(), options: [.allowsCameraControl])
             .ignoresSafeArea(edges: .top)
     }
 }

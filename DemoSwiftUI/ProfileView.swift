@@ -14,6 +14,7 @@ struct ProfileView: View {
     
     var body: some View {
         ZStack {
+            // one of two dynamic background with a shader by the SpriteKit framework
             GeometryReader { geo in
                 if showingAlert {
                     SpriteView(scene: StarsScene.getScene(size: geo.size, 1))
@@ -25,6 +26,7 @@ struct ProfileView: View {
             }
             .ignoresSafeArea()
             
+            // button to show an alert message
             Button("Tap me") {
                 showingAlert = true
             }
