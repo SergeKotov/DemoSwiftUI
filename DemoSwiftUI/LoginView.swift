@@ -8,16 +8,27 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    enum Field: Hashable {
+        case loginField
+        case passwordField
+    }
+    
     @Binding var logged: Bool
     
     @State private var login: String = ""
     @State private var password: String = ""
+    @FocusState private var focused: Field?
     
     var body: some View {
         ZStack {
             // beautiful color background
             AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .red]), center: .center, angle: Angle(radians: 1))
                 .ignoresSafeArea(edges: .top)
+                .onTapGesture {
+                    // hide the keyboard
+                    focused = nil
+                }
             
             VStack {
                 // avatar image
@@ -32,8 +43,10 @@ struct LoginView: View {
                 VStack(spacing: -0.5) {
                     TextField("Login", text: $login)
                         .modifier(TextFielder())
+                        .focused($focused, equals: .loginField)
                     SecureField("Password", text: $password)
                         .modifier(TextFielder())
+                        .focused($focused, equals: .passwordField)
                 }
                 .cornerRadius(12)
                 .padding(.top, 60)
@@ -41,10 +54,17 @@ struct LoginView: View {
                 
                 // login button
                 Button(action: {
-                    // no authentication actually, logged allways
-                    self.logged = true
+                    if login.isEmpty {
+                        focused = .loginField
+                    } else if password.isEmpty {
+                        focused = .passwordField
+                    } else {
+                        // no authentication actually, logged allways
+                        self.logged = true
+                    }
                 }) {
-                    Text("Log In")
+                    Text( login.isEmpty || password.isEmpty ?
+                          "Enter a login and password" : "Log In")
                         .frame(height: 50)
                         .foregroundColor(.black)
                 }
