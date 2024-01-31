@@ -79,8 +79,6 @@ struct LoginView: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView(logged: .constant(false))
-    }
+#Preview {
+    LoginView(logged: .constant(false))
 }

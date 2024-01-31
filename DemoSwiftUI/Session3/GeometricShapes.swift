@@ -36,8 +36,6 @@ struct GeometricShapes: View {
     }
 }
 
-struct GeometricShapes_Previews: PreviewProvider {
-    static var previews: some View {
-        GeometricShapes()
-    }
+#Preview {
+    GeometricShapes()
 }

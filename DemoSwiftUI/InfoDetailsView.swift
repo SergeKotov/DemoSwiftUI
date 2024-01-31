@@ -38,8 +38,6 @@ struct InfoDetailsView: View {
     }
 }
 
-struct InfoDetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        InfoDetailsView(post: Post.data[0])
-    }
+#Preview {
+    InfoDetailsView(post: Post.data[0])
 }

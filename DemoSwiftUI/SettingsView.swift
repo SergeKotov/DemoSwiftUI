@@ -25,8 +25,8 @@ struct SettingsView: View {
                 Section {
                     // show one of two links to apps in the AppStore
                     Toggle("Show a secret link", isOn: $linkOn.animation())
-                        .onChange(of: linkOn) { on in
-                            if on {
+                        .onChange(of: linkOn) {
+                            if linkOn {
                                 // toogle between two links for every set on
                                 toggler.toggle()
                             }
@@ -63,8 +63,6 @@ struct SettingsView: View {
     }
 }
 
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
-    }
+#Preview {
+    SettingsView()
 }

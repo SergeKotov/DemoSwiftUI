@@ -17,8 +17,6 @@ struct EarthView: View {
     }
 }
 
-struct EarthView_Previews: PreviewProvider {
-    static var previews: some View {
-        EarthView()
-    }
+#Preview {
+    EarthView()
 }

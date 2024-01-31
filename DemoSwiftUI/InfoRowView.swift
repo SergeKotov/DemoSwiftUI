@@ -27,8 +27,6 @@ struct InfoRowView: View {
     }
 }
 
-struct InfoRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        InfoRowView(post: Post.data[0])
-    }
+#Preview {
+    InfoRowView(post: Post.data[0])
 }

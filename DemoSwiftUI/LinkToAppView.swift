@@ -32,8 +32,6 @@ struct LinkToAppView: View {
     }
 }
 
-struct LinkToAppView_Previews: PreviewProvider {
-    static var previews: some View {
-        LinkToAppView(toggled: true)
-    }
+#Preview {
+    LinkToAppView(toggled: true)
 }

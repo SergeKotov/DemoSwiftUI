@@ -15,7 +15,6 @@ struct UIBezierView: View {
                 .foregroundColor(.pink)
             Text("Free curved shape")
                 .font(.title)
-            Spacer()
         }
         .ignoresSafeArea()
     }
@@ -76,10 +75,8 @@ struct BezierShape: Shape {
 }
 
 
-struct UIBezierView_Previews: PreviewProvider {
-    static var previews: some View {
-        UIBezierView()
-    }
+#Preview {
+    UIBezierView()
 }
 
 func chance(_ r: Float) -> Bool {

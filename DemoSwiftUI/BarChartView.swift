@@ -29,8 +29,6 @@ struct BarChartView: View {
     }
 }
 
-struct ChartView_Previews: PreviewProvider {
-    static var previews: some View {
-        BarChartView()
-    }
+#Preview {
+    BarChartView()
 }

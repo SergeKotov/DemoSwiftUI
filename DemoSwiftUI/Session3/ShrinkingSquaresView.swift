@@ -29,8 +29,6 @@ struct ShrinkingSquares: Shape {
 }
 
 
-struct ShrinkingSquaresView_Previews: PreviewProvider {
-    static var previews: some View {
-        ShrinkingSquaresView()
-    }
+#Preview {
+    ShrinkingSquaresView()
 }

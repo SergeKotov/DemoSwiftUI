@@ -19,7 +19,7 @@ struct AnimationView: View {
             .shadow(radius: 12)
             .padding(.top, 20)
             .scaleEffect(scale)
-        // try: rotationEffect
+        // try: .rotationEffect(Angle(radians: scale))
             .animation(.easeOut, value: scale)
         // try:.interpolatingSpring(mass: 0.5, stiffness: 0.5, damping: 0.5, initialVelocity: 10)
             .onTapGesture {
@@ -29,8 +29,6 @@ struct AnimationView: View {
 }
 
 
-struct AnimationView_Previews: PreviewProvider {
-    static var previews: some View {
-        AnimationView()
-    }
+#Preview {
+    AnimationView()
 }

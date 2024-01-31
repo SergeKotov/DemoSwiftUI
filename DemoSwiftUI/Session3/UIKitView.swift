@@ -16,10 +16,8 @@ struct UIKitView: View {
     }
 }
 
-struct UIKitView_Previews: PreviewProvider {
-    static var previews: some View {
-        UIKitView()
-    }
+#Preview {
+    UIKitView()
 }
 
 
