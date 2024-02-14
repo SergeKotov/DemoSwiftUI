@@ -17,6 +17,10 @@
 		363451A62B7BC573003B13CA /* QuizQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363451A52B7BC573003B13CA /* QuizQuestionView.swift */; };
 		363451A82B7BF86A003B13CA /* PartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363451A72B7BF86A003B13CA /* PartHeaderView.swift */; };
 		363451AA2B7BFA14003B13CA /* PartCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363451A92B7BFA14003B13CA /* PartCellView.swift */; };
+		363451B12B7CBCAA003B13CA /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363451B02B7CBCAA003B13CA /* StatisticsView.swift */; };
+		363451B32B7D0BDA003B13CA /* LineMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363451B22B7D0BDA003B13CA /* LineMarkView.swift */; };
+		363451B52B7D0E9C003B13CA /* BarMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363451B42B7D0E9C003B13CA /* BarMarkView.swift */; };
+		363451B72B7D0F45003B13CA /* SectorMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363451B62B7D0F45003B13CA /* SectorMarkView.swift */; };
 		365D0B592A0E39FF00C42C76 /* LinkToAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365D0B582A0E39FF00C42C76 /* LinkToAppView.swift */; };
 		367918742A0E6DF4000E89CD /* AppInStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367918732A0E6DF4000E89CD /* AppInStore.swift */; };
 		368F82242A24B474009480BC /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368F82232A24B474009480BC /* AttributedString.swift */; };
@@ -59,6 +63,10 @@
 		363451A52B7BC573003B13CA /* QuizQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionView.swift; sourceTree = "<group>"; };
 		363451A72B7BF86A003B13CA /* PartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartHeaderView.swift; sourceTree = "<group>"; };
 		363451A92B7BFA14003B13CA /* PartCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartCellView.swift; sourceTree = "<group>"; };
+		363451B02B7CBCAA003B13CA /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		363451B22B7D0BDA003B13CA /* LineMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineMarkView.swift; sourceTree = "<group>"; };
+		363451B42B7D0E9C003B13CA /* BarMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarMarkView.swift; sourceTree = "<group>"; };
+		363451B62B7D0F45003B13CA /* SectorMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorMarkView.swift; sourceTree = "<group>"; };
 		365D0B582A0E39FF00C42C76 /* LinkToAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkToAppView.swift; sourceTree = "<group>"; };
 		367918732A0E6DF4000E89CD /* AppInStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInStore.swift; sourceTree = "<group>"; };
 		368F82232A24B474009480BC /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
@@ -168,6 +176,10 @@
 		363451AF2B7BFDFA003B13CA /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
+				363451B02B7CBCAA003B13CA /* StatisticsView.swift */,
+				363451B42B7D0E9C003B13CA /* BarMarkView.swift */,
+				363451B22B7D0BDA003B13CA /* LineMarkView.swift */,
+				363451B62B7D0F45003B13CA /* SectorMarkView.swift */,
 			);
 			path = Statistics;
 			sourceTree = "<group>";
@@ -334,17 +346,21 @@
 				36E4BA3C2B74ED4900190113 /* CourseData.swift in Sources */,
 				36CCC1082B71316A006A72A2 /* CourseView.swift in Sources */,
 				368F822D2A24D27E009480BC /* UIBezierView.swift in Sources */,
+				363451B52B7D0E9C003B13CA /* BarMarkView.swift in Sources */,
 				36E4BA402B750E6500190113 /* CourseQuestion.swift in Sources */,
 				3608D19D298028E300ECD08B /* StarsScene.swift in Sources */,
 				363451A22B7BBE0B003B13CA /* PartImageView.swift in Sources */,
 				36CCC10A2B722E33006A72A2 /* DataContainer.swift in Sources */,
+				363451B12B7CBCAA003B13CA /* StatisticsView.swift in Sources */,
 				363451A62B7BC573003B13CA /* QuizQuestionView.swift in Sources */,
 				365D0B592A0E39FF00C42C76 /* LinkToAppView.swift in Sources */,
 				36E4BA3A2B74EB8A00190113 /* PartView.swift in Sources */,
+				363451B32B7D0BDA003B13CA /* LineMarkView.swift in Sources */,
 				36B9FDEF2A0D2DEA004F8FAF /* PlanetScene.swift in Sources */,
 				36CCC1002B712606006A72A2 /* CoursePart.swift in Sources */,
 				363451A02B7BA768003B13CA /* PartRowView.swift in Sources */,
 				36B3D6CF297E851D00086742 /* DemoSwiftUIApp.swift in Sources */,
+				363451B72B7D0F45003B13CA /* SectorMarkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

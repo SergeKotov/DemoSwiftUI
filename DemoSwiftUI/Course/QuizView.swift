@@ -8,24 +8,24 @@
 import SwiftUI
 
 struct QuizView: View {
-        
-    let quiz: [CourseQuestion]
-    
-    @Binding var passed: Bool
+            
+    var part: CoursePart
     
     @State private var quizzing = true
-    @State private var questNumber = 0
-    @State private var wrongCount = 0
+    
+    var quiz: [CourseQuestion] {
+        CourseData.quizData[part.id] ?? []
+    }
     
     var body: some View {
         if quizzing {
-            QuizQuestionView(quizzing: $quizzing, questNumber: $questNumber, wrongCount: $wrongCount, quizCount: quiz.count, question: quiz[questNumber])
+            QuizQuestionView(part: part, quizzing: $quizzing)
         } else {
-            QuizResultView(passed: $passed, count: quiz.count, wrongCount: wrongCount)
+            QuizResultView(passed: part.passed, count: quiz.count, wrong: part.wrong)
         }
     }
 }
 
 #Preview {
-    QuizView(quiz: CourseData.quizData["01"] ?? [], passed: .constant(false))
+    QuizView(part: DataController.previewCoursePart)
 }

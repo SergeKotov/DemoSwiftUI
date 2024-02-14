@@ -8,11 +8,11 @@
 enum CourseData {
     
     static let partData = [
-            CoursePart(id: "01", title: "Введение в фреймворк"),
-            CoursePart(id: "02", title: "Архитектура SwiftUI"),
-            CoursePart(id: "03", title: "Модификаторы и реакция на события"),
-            CoursePart(id: "04", title: "Интеграция с другими фреймворками"),
-            CoursePart(id: "05", title: "Анимация и графика в SwiftUI"),
+        CoursePart(id: "01", title: "Введение в фреймворк", count: quizData["01"]?.count ?? 10),
+        CoursePart(id: "02", title: "Архитектура SwiftUI", count: quizData["02"]?.count ?? 10),
+        CoursePart(id: "03", title: "Модификаторы и реакция на события", count: quizData["03"]?.count ?? 10),
+        CoursePart(id: "04", title: "Интеграция с другими фреймворками", count: quizData["04"]?.count ?? 8),
+        CoursePart(id: "05", title: "Анимация и графика в SwiftUI", count: quizData["05"]?.count ?? 8),
         ]
     
     static let cellData = [
@@ -101,8 +101,8 @@ enum CourseData {
                    CourseQuestion(text: "Вам нужно добавить в приложение простую 3D-игру. Что будете использовать?", correct: [1, 2], answers: ["SpriteKit", "SceneKit", "Unity", "SwiftUI с кастомными 3D-моделями"]),
                   ],
             
-            "05": [CourseQuestion(text: "Имеет ли Swift фреймворк от Apple для рисования графиков и диаграмм?", correct: [0, 1], answers: ["SwiftCharts", "Charts", "Graphics", "SwiftData"]),
-                   CourseQuestion(text: "Для рисования геометрических фигур есть вьюшки Ellipse и Circle. Можно ли вместо Ellipse использовать Circle, а всесто Circle применить Ellipse?", correct: [2], answers: ["Только Ellipse вместо Circle", "Только Circle вместо Ellipse", "Да в обеих случаях"]),
+            "05": [CourseQuestion(text: "Имеет ли Swift фреймворк от Apple для рисования графиков и диаграмм?", correct: [0, 1], answers: ["Swift Charts", "Charts", "Graphics", "SwiftData"]),
+                   CourseQuestion(text: "Для рисования геометрических фигур есть вьюшки Ellipse и Circle. Можно ли вместо Ellipse использовать Circle, а вместо Circle применить Ellipse?", correct: [2], answers: ["Только Ellipse вместо Circle", "Только Circle вместо Ellipse", "Да в обеих случаях"]),
                    CourseQuestion(text: "Чтобы разместить надпись на геометрической фигуре можно...", correct: [0, 1, 2], answers: ["использовать модификатор .overlay", "сделать кастомный View с фигурой и надписью", "применить контейнер ZStack"]),
                    CourseQuestion(text: "Для рисования собственных фигур со сложной геометрией целесообразно...", correct: [1, 2], answers: ["Определить структуру по протоколу View с вычисляемым свойством body", "Определить структуру по протоколу Shape с методом path", "Использовать UIBezierPath"]),
                    CourseQuestion(text: "Где находится начало координат при рисовании с UIBezierPath?", correct: [0], answers: ["Верхний левый угол", "Верхний правый угол", "Нижний левый угол", "Нижний правый угол", "Центр экрана"]),

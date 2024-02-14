@@ -17,7 +17,7 @@ struct ContentView: View {
                     Label("SwiftUI", systemImage: "swift")
                 }
             
-            Text("Statistics")
+            StatisticsView()
                 .tabItem {
                     Label("Statistics", systemImage: "chart.bar.xaxis")
                 }

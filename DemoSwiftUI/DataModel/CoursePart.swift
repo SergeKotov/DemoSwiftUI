@@ -14,12 +14,16 @@ class CoursePart {
     var title: String
     var passed: Bool
     var date: Date?
+    var count: Int
+    var wrong: Int
     @Relationship(deleteRule: .cascade) var cells = [CourseCell]()
 
-    init(id: String, title: String, passed: Bool = false, date: Date? = nil) {
+    init(id: String, title: String, count: Int, passed: Bool = false, date: Date? = nil) {
         self.id = id
         self.title = title
         self.passed = passed
         self.date = date
+        self.count = count
+        wrong = count
     }
 }

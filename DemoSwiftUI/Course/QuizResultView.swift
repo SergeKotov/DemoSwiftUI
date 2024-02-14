@@ -11,24 +11,20 @@ struct QuizResultView: View {
     
     @Environment(\.dismiss) var dismiss
     
-    @Binding var passed: Bool
-    
+    let passed: Bool
     let count: Int
-    let wrongCount: Int
-    
-    var success: Bool { wrongCount < 3 }
+    let wrong: Int
     
     var body: some View {
         ZStack {
-            Color(success ? .systemGreen : .systemRed)
+            Color(passed ? .systemGreen : .systemRed)
                 .ignoresSafeArea()
             
             VStack {
-                Text("Результат: \(success ? "тест пройден!" : "Верно \(count - wrongCount) из \(count)")")
+                Text("Результат: \(passed ? "тест пройден!" : "Верно \(count - wrong) из \(count)")")
                     .font(.title2)
                 
                 Button("Вернуться") {
-                    passed = success
                     dismiss()
                 }
                 .padding(30)
@@ -38,5 +34,5 @@ struct QuizResultView: View {
 }
 
 #Preview {
-    QuizResultView(passed: .constant(false), count: 10, wrongCount: 2)
+    QuizResultView(passed: true, count: 10, wrong: 2)
 }

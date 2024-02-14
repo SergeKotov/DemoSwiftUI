@@ -12,7 +12,6 @@ struct PartHeaderView: View {
     var part: CoursePart
     
     @State private var showingQuiz = false
-    @State private var testPassed = false
     
     var body: some View {
         VStack {
@@ -38,18 +37,12 @@ struct PartHeaderView: View {
                         showingQuiz.toggle()
                     }
                     .sheet(isPresented: $showingQuiz) {
-                        QuizView(quiz: CourseData.quizData[part.id] ?? [], passed: $testPassed)
+                        QuizView(part: part)
                     }
                 }
             }
         }
         .padding([.leading, .trailing])
-        .onChange(of: testPassed) {
-            if testPassed {
-                part.passed = true
-                part.date = .now
-            }
-        }
     }
 }
 

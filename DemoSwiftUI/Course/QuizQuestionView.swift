@@ -8,22 +8,27 @@
 import SwiftUI
 
 struct QuizQuestionView: View {
+    
+    var part: CoursePart
         
     @Binding var quizzing: Bool
-    @Binding var questNumber: Int
-    @Binding var wrongCount: Int
     
+    @State private var questNumber = 1
     @State private var isCorrect = false
     @State private var showingResult = false
     
-    let quizCount: Int
-    
-    var question: CourseQuestion
+    var quiz: [CourseQuestion] {
+        CourseData.quizData[part.id] ?? []
+    }
+        
+    var question: CourseQuestion {
+        quiz[questNumber-1]
+    }
     
     var body: some View {
         VStack {
             Text("Вопрос: ") +
-            Text(String(questNumber+1))
+            Text(String(questNumber))
                 .foregroundColor(.blue)
                 .bold()
             
@@ -37,14 +42,12 @@ struct QuizQuestionView: View {
             ForEach(question.answers, id: \.self) { variant in
                 Button(variant) {
                     check(variant)
-                    if !isCorrect {
-                        wrongCount += 1
-                    }
+                    updateData()
                     showingResult = true
                 }
                 .alert(isCorrect ? "Верно!" : "Неверно", isPresented: $showingResult) {
                     Button("Дальше", role: .cancel) {
-                        if questNumber < quizCount-1 {
+                        if questNumber < quiz.count {
                             questNumber += 1
                         } else {
                             quizzing = false
@@ -57,12 +60,25 @@ struct QuizQuestionView: View {
         .padding()
     }
     
-    func check(_ variant: String) {
+    private func check(_ variant: String) {
         let ind = question.answers.firstIndex(of: variant) ?? -1
         isCorrect = question.correct.contains(ind)
+    }
+    
+    private func updateData() {
+        if questNumber == 1 {
+            part.wrong = part.count
+        }
+        if isCorrect {
+            part.wrong -= 1
+        }
+        if questNumber == quiz.count, part.wrong < 3 {
+            part.passed = true
+        }
+        part.date = .now
     }
 }
 
 #Preview {
-    QuizQuestionView(quizzing: .constant(true), questNumber: .constant(1), wrongCount: .constant(0), quizCount: 8, question: CourseData.quizData["01"]![0])
+    QuizQuestionView(part: DataController.previewCoursePart, quizzing: .constant(true))
 }
