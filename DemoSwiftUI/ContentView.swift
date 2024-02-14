@@ -8,33 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State private var isLogin = false
-    
+        
     var body: some View {
         // tab bar with view items
         TabView() {
-            // if user is logged show the profile-view, login-view otherwise
-            if isLogin {
-                ProfileView()
-                    .tabItem {
-                        Label("Profile", systemImage: "person.fill.checkmark")
-                    }
-            } else {
-                LoginView(logged: $isLogin)
-                    .tabItem {
-                        Label("Login", systemImage: "person")
-                    }
-            }
+            CourseView()
+                .tabItem {
+                    Label("SwiftUI", systemImage: "swift")
+                }
+            
+            Text("Statistics")
+                .tabItem {
+                    Label("Statistics", systemImage: "chart.bar.xaxis")
+                }
             
             EarthView()
                 .tabItem {
                     Label("ЗD Planet", systemImage: "globe.europe.africa")
-                }
-            
-            InfoView()
-                .tabItem {
-                    Label("Anthropology", systemImage: "globe")
                 }
             
             SettingsView()
