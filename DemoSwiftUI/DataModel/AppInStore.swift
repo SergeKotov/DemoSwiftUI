@@ -13,12 +13,12 @@ struct AppInStore {
     let url: URL
     
     static let data = [
-        Self(title: "Helius' - full of life\nOne thinks ahead",
-             imageName: "Helius180",
-             url: URL(string: "itms-apps://itunes.apple.com/app/id1338472119")!),
-        
         Self(title: "Memokeys\nThe best way to memorize words",
-             imageName: "Memokeys180",
-             url: URL(string: "itms-apps://itunes.apple.com/app/memokeys/id6447063232")!)
+             imageName: "Memokeys",
+             url: URL(string: "itms-apps://itunes.apple.com/app/memokeys/id6447063232")!),
+        
+        Self(title: "Swift-Way\nThe swift way to start up a career",
+             imageName: "SwiftWay",
+             url: URL(string: "itms-apps://itunes.apple.com/ru/app/swiftway/id6473262255")!),
     ]
 }

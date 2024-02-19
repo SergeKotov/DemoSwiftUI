@@ -21,6 +21,10 @@
 		363451B32B7D0BDA003B13CA /* LineMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363451B22B7D0BDA003B13CA /* LineMarkView.swift */; };
 		363451B52B7D0E9C003B13CA /* BarMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363451B42B7D0E9C003B13CA /* BarMarkView.swift */; };
 		363451B72B7D0F45003B13CA /* SectorMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363451B62B7D0F45003B13CA /* SectorMarkView.swift */; };
+		363451B92B7D1C85003B13CA /* GroupBoxWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363451B82B7D1C85003B13CA /* GroupBoxWrapper.swift */; };
+		363451BB2B7E0BFA003B13CA /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363451BA2B7E0BFA003B13CA /* ColorTheme.swift */; };
+		363451BD2B7E1C40003B13CA /* ImageStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363451BC2B7E1C40003B13CA /* ImageStyler.swift */; };
+		363FFAA82B83473E00CB0109 /* ColorGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363FFAA72B83473E00CB0109 /* ColorGradientView.swift */; };
 		365D0B592A0E39FF00C42C76 /* LinkToAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365D0B582A0E39FF00C42C76 /* LinkToAppView.swift */; };
 		367918742A0E6DF4000E89CD /* AppInStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367918732A0E6DF4000E89CD /* AppInStore.swift */; };
 		368F82242A24B474009480BC /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368F82232A24B474009480BC /* AttributedString.swift */; };
@@ -67,6 +71,10 @@
 		363451B22B7D0BDA003B13CA /* LineMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineMarkView.swift; sourceTree = "<group>"; };
 		363451B42B7D0E9C003B13CA /* BarMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarMarkView.swift; sourceTree = "<group>"; };
 		363451B62B7D0F45003B13CA /* SectorMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorMarkView.swift; sourceTree = "<group>"; };
+		363451B82B7D1C85003B13CA /* GroupBoxWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxWrapper.swift; sourceTree = "<group>"; };
+		363451BA2B7E0BFA003B13CA /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		363451BC2B7E1C40003B13CA /* ImageStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStyler.swift; sourceTree = "<group>"; };
+		363FFAA72B83473E00CB0109 /* ColorGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGradientView.swift; sourceTree = "<group>"; };
 		365D0B582A0E39FF00C42C76 /* LinkToAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkToAppView.swift; sourceTree = "<group>"; };
 		367918732A0E6DF4000E89CD /* AppInStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInStore.swift; sourceTree = "<group>"; };
 		368F82232A24B474009480BC /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 		363451AC2B7BFCE3003B13CA /* Delete */ = {
 			isa = PBXGroup;
 			children = (
+				36B3D6E7297E953100086742 /* TextFielder.swift */,
 				36B3D6DD297E8A3B00086742 /* LoginView.swift */,
 				36B3D6E9297E9F9E00086742 /* ProfileView.swift */,
 				36B3D6E5297E8AEB00086742 /* InfoView.swift */,
@@ -160,6 +169,7 @@
 			children = (
 				36B3D6E3297E8ADD00086742 /* SettingsView.swift */,
 				365D0B582A0E39FF00C42C76 /* LinkToAppView.swift */,
+				363FFAA72B83473E00CB0109 /* ColorGradientView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -225,7 +235,6 @@
 				363451AF2B7BFDFA003B13CA /* Statistics */,
 				363451AE2B7BFD97003B13CA /* Earth */,
 				363451AD2B7BFD64003B13CA /* Settings */,
-				36B3D6E7297E953100086742 /* TextFielder.swift */,
 				36D097872B6A8286002AACEA /* Session1 */,
 				36D097882B6A829A002AACEA /* Session2 */,
 				368F82252A24CC2A009480BC /* Session3 */,
@@ -246,6 +255,9 @@
 		36D097882B6A829A002AACEA /* Session2 */ = {
 			isa = PBXGroup;
 			children = (
+				363451BA2B7E0BFA003B13CA /* ColorTheme.swift */,
+				363451B82B7D1C85003B13CA /* GroupBoxWrapper.swift */,
+				363451BC2B7E1C40003B13CA /* ImageStyler.swift */,
 			);
 			path = Session2;
 			sourceTree = "<group>";
@@ -328,6 +340,7 @@
 				367918742A0E6DF4000E89CD /* AppInStore.swift in Sources */,
 				368F822B2A24D0C7009480BC /* ShrinkingSquaresView.swift in Sources */,
 				36B9FDED2A0D2D2B004F8FAF /* EarthView.swift in Sources */,
+				363451BB2B7E0BFA003B13CA /* ColorTheme.swift in Sources */,
 				36B3D6E4297E8ADD00086742 /* SettingsView.swift in Sources */,
 				36CCC1042B712B5B006A72A2 /* CourseCell.swift in Sources */,
 				36E4BA3E2B750C6A00190113 /* QuizView.swift in Sources */,
@@ -338,6 +351,7 @@
 				36CCC1022B71272A006A72A2 /* SwiftQuiz.swift in Sources */,
 				368F82292A24CF17009480BC /* GeometricShapes.swift in Sources */,
 				363451A42B7BC13A003B13CA /* QuizResultView.swift in Sources */,
+				363451B92B7D1C85003B13CA /* GroupBoxWrapper.swift in Sources */,
 				3608D195297FD19600ECD08B /* Post.swift in Sources */,
 				36B3D6EA297E9F9E00086742 /* ProfileView.swift in Sources */,
 				368F822F2A24D885009480BC /* AnimationView.swift in Sources */,
@@ -347,6 +361,7 @@
 				36CCC1082B71316A006A72A2 /* CourseView.swift in Sources */,
 				368F822D2A24D27E009480BC /* UIBezierView.swift in Sources */,
 				363451B52B7D0E9C003B13CA /* BarMarkView.swift in Sources */,
+				363FFAA82B83473E00CB0109 /* ColorGradientView.swift in Sources */,
 				36E4BA402B750E6500190113 /* CourseQuestion.swift in Sources */,
 				3608D19D298028E300ECD08B /* StarsScene.swift in Sources */,
 				363451A22B7BBE0B003B13CA /* PartImageView.swift in Sources */,
@@ -358,6 +373,7 @@
 				363451B32B7D0BDA003B13CA /* LineMarkView.swift in Sources */,
 				36B9FDEF2A0D2DEA004F8FAF /* PlanetScene.swift in Sources */,
 				36CCC1002B712606006A72A2 /* CoursePart.swift in Sources */,
+				363451BD2B7E1C40003B13CA /* ImageStyler.swift in Sources */,
 				363451A02B7BA768003B13CA /* PartRowView.swift in Sources */,
 				36B3D6CF297E851D00086742 /* DemoSwiftUIApp.swift in Sources */,
 				363451B72B7D0F45003B13CA /* SectorMarkView.swift in Sources */,

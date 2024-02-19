@@ -14,7 +14,7 @@ struct PartRowView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                PartImageView(id: part.id, dim: 40)
+                PartImageView(id: part.id, dim: 45)
                 Text(part.id)
                     .foregroundColor(.secondary)
                 Text(part.title)

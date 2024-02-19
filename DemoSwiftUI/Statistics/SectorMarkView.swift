@@ -13,26 +13,25 @@ struct SectorMarkView: View {
     var parts: [CoursePart]
     
     var body: some View {
-        GroupBox ("Количество тем в каждой части курса") {
-            Chart(parts) { part in
-                SectorMark(
-                    angle: .value(
-                        Text(verbatim: part.title),
-                        part.cells.count
-                    ),
-                    innerRadius: .ratio(0.4)
+        Chart(parts) { part in
+            SectorMark(
+                angle: .value(
+                    Text(verbatim: part.title),
+                    part.cells.count
+                ),
+                innerRadius: .ratio(0.4)
+            )
+            .foregroundStyle(
+                by: .value(
+                    Text(verbatim: part.title),
+                    part.title
                 )
-                .foregroundStyle(
-                    by: .value(
-                        Text(verbatim: part.title),
-                        part.title
-                    )
-                )
-                .annotation(position: .overlay) {
-                    Text("\(part.cells.count)")
-                }
+            )
+            .annotation(position: .overlay) {
+                Text("\(part.cells.count)")
             }
         }
+        .groupBoxed(title: "Количество тем в каждой части курса")
     }
 }
 

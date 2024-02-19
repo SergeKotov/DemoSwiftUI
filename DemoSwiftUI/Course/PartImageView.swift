@@ -15,9 +15,7 @@ struct PartImageView: View {
     var body: some View {
         Image(id)
             .resizable()
-            .frame(width: dim, height: dim)
-            .cornerRadius(8)
-            .shadow(radius: 6)
+            .modifier(ImageStyler(dim: dim))
     }
 }
 

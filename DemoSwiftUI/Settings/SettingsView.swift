@@ -8,56 +8,50 @@
 import SwiftUI
 
 struct SettingsView: View {
-    // connect to actual color scheme in iOS environment
+    // read actual color scheme from the environment
     @Environment(\.colorScheme) var colorScheme
+    @Environment(ColorTheme.self) private var theme
+    @State private var selectTheme = ColorTheme.Theme.default
     
-    @State private var linkOn = false
+    @AppStorage("linkToAppOn") private var linkOn = false
     @State private var toggler = true
     
-    @State private var sliderValue = 10.0
-    @State private var isChanging = false
-    
     var body: some View {
-        ZStack {
-            Color(.systemGray5)
-            
-            Form {
-                Section {
-                    // show one of two links to apps in the AppStore
-                    Toggle("Show a secret link", isOn: $linkOn.animation())
-                        .onChange(of: linkOn) {
-                            if linkOn {
-                                // toogle between two links for every set on
-                                toggler.toggle()
-                            }
+        Form {
+            Section {
+                // show one of two links to apps in the AppStore
+                Toggle("Show a secret link", isOn: $linkOn.animation())
+                    .onChange(of: linkOn) {
+                        if linkOn {
+                            // toogle between two links for every set on
+                            toggler.toggle()
                         }
-                    
-                    if linkOn {
-                        LinkToAppView(toggled: toggler)
                     }
-                    
-                    // presents current light / dark mode in iOS, connected dynamically
-                    Text("iOS appearance: " + (colorScheme == .dark ? "dark mode" : "light mode"))
-                        .padding(32)
-                }
                 
-                // slider to change angle of color gradient bellow
-                Slider(value: $sliderValue, in: 0 ... 100) { changed in
-                    isChanging = changed
+                if linkOn {
+                    LinkToAppView(toggled: toggler)
                 }
-                Text("Progress value: \(Int(sliderValue))")
-                    .foregroundColor(.secondary)
+            }
+            
+            Section {
+                // presents current light / dark mode in iOS, connected dynamically
+                Text("Color theme appearance: ") +
+                Text("\(colorScheme == .dark ? "dark mode" : "light mode")").bold()
                 
-                ZStack {
-                    AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .red]), center: .center, angle: Angle(radians: sliderValue/10))
-                    
-                    Text("\(isChanging ? "I Like to Move It" : "I see you")")
-                        .font(.title)
-                        .foregroundColor(.white)
+                Picker("Color theme", selection: $selectTheme.animation()) {
+                    ForEach(ColorTheme.Theme.allCases, id: \.self) {
+                        Text($0.rawValue).tag($0)
+                    }
                 }
-                
-                BarChartView()
-                    .frame(height: 300)
+                .pickerStyle(.segmented)
+                .onChange(of: selectTheme) {
+                    theme.current = selectTheme
+                }
+            }
+            
+            Section {
+                // slider to change angle of the color gradient view bellow
+                ColorGradientView()
             }
         }
     }
@@ -65,4 +59,5 @@ struct SettingsView: View {
 
 #Preview {
     SettingsView()
+        .environment(ColorTheme())
 }

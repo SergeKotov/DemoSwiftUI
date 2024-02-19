@@ -22,10 +22,10 @@ struct LinkToAppView: View {
             HStack {
                 Image(app.imageName)
                     .resizable()
-                    .scaledToFill()
-                    .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
-                    .frame(width: 45, height: 45)
+                    .modifier(ImageStyler(dim: 60))
+                
                 Text(app.title)
+                
                 Spacer()
             }
         }
