@@ -13,7 +13,6 @@ struct Post: Identifiable {
     let subtitle: String
     let description: String
     let image: Image
-    let age: String
     
     static let data = [
         Post(id: 1,
@@ -34,8 +33,8 @@ struct Post: Identifiable {
 
              Welcome!
              """,
-             image: Image("pict1"),
-             age: "Archaic"),
+             image: Image("06")),
+             
         Post(id: 2,
              title: "Ancient Greek Paideia",
              subtitle: "A perfect way to educate people",
@@ -55,8 +54,8 @@ struct Post: Identifiable {
 
              The name Helius’ is rooted in Ancient Greek mythology and has a long history. We will talk about it in future blog posts.
              """,
-             image: Image("pict2"),
-             age: "Archaic"),
+             image: Image("01")),
+             
         Post(id: 3,
              title: "The Mechanical Age",
              subtitle: "The mechanization of a logical calculus",
@@ -72,8 +71,8 @@ struct Post: Identifiable {
 
              As every computer program, Helius’ uses the mechanical vision of logical processes. However, it takes into account the recursive nature of matter. This is a very attractive idea that is close to the original vision of “Ars magna generalis.”
              """,
-             image: Image("pict3"),
-             age: "Enlightenment"),
+             image: Image("02")),
+
         Post(id: 4,
              title: "From Psyche to Intelligence",
              subtitle: "The human mind as the Universe",
@@ -89,8 +88,8 @@ struct Post: Identifiable {
 
              What makes Helius’ special is that it also has an emotional side along with the intelligent one. These emotions, however, do not come from psychology but rather from neuroscience. See the next part of the story for details.
              """,
-             image: Image("pict4"),
-             age: "Enlightenment"),
+             image: Image("07")),
+
         Post(id: 5,
              title: "Feedback to Nature",
              subtitle: "Cybernetics and artificial intelligence: a holistic vision of nature, mind, and machine",
@@ -103,8 +102,8 @@ struct Post: Identifiable {
              In 1972, another cybernetician Stafford Beer wrote a book, “Brain of the firm,” where he suggested the Viable System Model or VSM. Explaining the patterns of viable systems, Beer refers to Ashby’s Law of Requisite Variety.
              Now imagine a program that embraces all of the above. The Helius’ structure and organization are based on a holistic vision of control, the Ashby’s Law of Requisite Variety, and the Beer’s Viable System Model in mind.
              """,
-             image: Image("pict5"),
-             age: "Nature"),
+             image: Image("05")),
+        
         Post(id: 6,
              title: "The Computer Age",
              subtitle: "From calculations to modeling the environment",
@@ -120,8 +119,8 @@ struct Post: Identifiable {
 
              Strange as it might seem, but Helius’ uses two of the very old but powerful programming languages for interaction with a human. These are LISP and BASIC. However, now the algorithms are transformed to the modern programming language Swift and Apple iOS.
              """,
-             image: Image("pict6"),
-             age: "Computer"),
+             image: Image("04")),
+
         Post(id: 7,
              title: "The Global Network",
              subtitle: "World Wide Web?",
@@ -135,8 +134,8 @@ struct Post: Identifiable {
 
              The Helius’ concept follows a “peer-to-all” communicative approach. We protect private data about the abilities of the mind but provide the opportunity to share achievements.
              """,
-             image: Image("pict7"),
-             age: "Computer"),
+             image: Image("03")),
+
         Post(id: 8,
              title: "Personal Device",
              subtitle: "An intelligent sputnik for every human",
@@ -147,7 +146,6 @@ struct Post: Identifiable {
              Helius’ is designed for thinking people with a primary goal to improve their creative abilities. This is achieved by solving various never-repeated puzzles with an increasing level of complexity. As the player reaches the shelf of self-abilities, he or she may enter a kind of “self-learning creative mode” to make the right meta-decisions and develop further.
              It’s time to take the first step in this exciting journey. Welcome to Helius’.
              """,
-             image: Image("pict8"),
-             age: "Computer")
+             image: Image("08")),
     ]
 }

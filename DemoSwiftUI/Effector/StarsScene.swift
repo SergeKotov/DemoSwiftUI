@@ -10,9 +10,7 @@ import SpriteKit
 // A simple example of SpriteKit's scene with two shaders
 
 final class StarsScene: SKScene {
-    
-    var shaderNum = 1
-    
+        
     override func didMove(to view: SKView) {
         
         let bg = SKSpriteNode(color: .clear, size: size)
@@ -32,18 +30,11 @@ final class StarsScene: SKScene {
             SKUniform(name: "formuparam", float: Float(0.35)),
             SKUniform(name: "speed", float: Float(0.1))
         ]
-        let code = shaderNum == 1 ? warpShader : starsShader
+        let code = starsShader // try: warpShader
 
         bg.shader = SKShader(source: code, uniforms: uniforms)
         bg.position = CGPoint(x: size.width/2, y: size.height/2)
         
         addChild(bg)
-    }
-    
-    static func getScene(size: CGSize, _ shaderNum: Int) -> SKScene {
-        let scene = StarsScene(size: size)
-        scene.shaderNum = shaderNum
-        scene.scaleMode = .aspectFit
-        return scene
     }
 }

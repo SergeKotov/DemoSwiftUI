@@ -15,9 +15,10 @@ struct DemoSwiftUIApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .preferredColorScheme(colorTheme.theme)
-                .environment(colorTheme)
+            AppStateView()
+//            ContentView()
+//                .preferredColorScheme(colorTheme.theme)
+//                .environment(colorTheme)
         }
         .modelContainer(DataController.container())
     }

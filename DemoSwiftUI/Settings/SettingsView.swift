@@ -11,7 +11,7 @@ struct SettingsView: View {
     // read actual color scheme from the environment
     @Environment(\.colorScheme) var colorScheme
     @Environment(ColorTheme.self) private var theme
-    @State private var selectTheme = ColorTheme.Theme.default
+    @State private var selectedTheme = ColorTheme.Theme.default
     
     @AppStorage("linkToAppOn") private var linkOn = false
     @State private var toggler = true
@@ -38,14 +38,14 @@ struct SettingsView: View {
                 Text("Color theme appearance: ") +
                 Text("\(colorScheme == .dark ? "dark mode" : "light mode")").bold()
                 
-                Picker("Color theme", selection: $selectTheme.animation()) {
+                Picker("Color theme", selection: $selectedTheme.animation()) {
                     ForEach(ColorTheme.Theme.allCases, id: \.self) {
                         Text($0.rawValue).tag($0)
                     }
                 }
                 .pickerStyle(.segmented)
-                .onChange(of: selectTheme) {
-                    theme.current = selectTheme
+                .onChange(of: selectedTheme) {
+                    theme.current = selectedTheme
                 }
             }
             

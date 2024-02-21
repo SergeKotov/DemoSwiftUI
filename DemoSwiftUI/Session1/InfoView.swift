@@ -17,7 +17,7 @@ struct InfoView: View {
                     // link to details view
                     InfoDetailsView(post: post)
                 } label: {
-                    // view to represent one row of data with image and title
+                    // the view to represent one row of data with image and title
                     InfoRowView(post: post)
                 }
             }

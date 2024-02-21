@@ -22,6 +22,11 @@ struct ContentView: View {
                     Label("Statistics", systemImage: "chart.bar.xaxis")
                 }
             
+            EffectSandbox()
+                .tabItem {
+                    Label("Effector", systemImage: "dog.fill")
+                }
+            
             EarthView()
                 .tabItem {
                     Label("ЗD Planet", systemImage: "globe.europe.africa")
@@ -37,4 +42,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environment(ColorTheme())
 }
