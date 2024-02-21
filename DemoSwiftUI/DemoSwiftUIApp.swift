@@ -10,15 +10,10 @@ import SwiftData
 
 @main
 struct DemoSwiftUIApp: App {
-    
-    @State private var colorTheme = ColorTheme()
-    
+        
     var body: some Scene {
         WindowGroup {
             AppStateView()
-//            ContentView()
-//                .preferredColorScheme(colorTheme.theme)
-//                .environment(colorTheme)
         }
         .modelContainer(DataController.container())
     }

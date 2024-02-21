@@ -36,7 +36,7 @@ class DataController {
     static var previewCourse: [CoursePart] {
         do {
             let container = DataController.container(inMemory: true)
-            var fetchDescriptor = FetchDescriptor<CoursePart>()
+            let fetchDescriptor = FetchDescriptor<CoursePart>()
             return try container.mainContext.fetch(fetchDescriptor)
         } catch {
             fatalError("Failed to fetch data from data container")

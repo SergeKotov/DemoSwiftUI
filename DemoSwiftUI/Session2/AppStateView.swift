@@ -22,12 +22,13 @@ struct AppStateView: View {
         switch appState {
         case .start:
             Text("Select app state:")
+                .font(.title2)
             Picker("Select state", selection: $appState) {
                 ForEach(AppState.allCases, id: \.self) {
                     Text($0.rawValue)
                 }
             }
-            .pickerStyle(.menu)
+            .pickerStyle(.wheel)
 
         case .fullDemo:
             ContentView()
