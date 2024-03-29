@@ -37,7 +37,10 @@ struct PartHeaderView: View {
                         showingQuiz.toggle()
                     }
                     .sheet(isPresented: $showingQuiz) {
-                        QuizView(part: part)
+                        NavigationView {
+                            QuizView(part: part)
+                                .navigationBarItems(trailing: PartImageView(id: part.id, dim: 60))
+                        }
                     }
                 }
             }

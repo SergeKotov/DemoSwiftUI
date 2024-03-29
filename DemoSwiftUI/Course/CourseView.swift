@@ -9,7 +9,6 @@ import SwiftUI
 import SwiftData
 
 struct CourseView: View {
-    @Environment(\.modelContext) var modelContext
 
     @Query(sort: [SortDescriptor(\CoursePart.id)]) var parts: [CoursePart]
 

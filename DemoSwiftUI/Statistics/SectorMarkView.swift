@@ -36,6 +36,6 @@ struct SectorMarkView: View {
 }
 
 #Preview {
-    BarMarkView(parts: DataController.previewCourse)
+    SectorMarkView(parts: DataController.previewCourse)
 }
 
