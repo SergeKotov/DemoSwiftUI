@@ -10,7 +10,7 @@ import Charts
 
 struct LineMarkView: View {
     
-    var parts: [CoursePart]
+    let parts: [CoursePart]
     
     var body: some View {
         Chart(partsByDates) { part in

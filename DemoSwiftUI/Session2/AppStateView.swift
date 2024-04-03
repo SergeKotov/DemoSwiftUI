@@ -10,6 +10,7 @@ import SwiftUI
 enum AppState: String, CaseIterable {
     case start = "Start"
     case session1 = "Session 1"
+    case session2 = "Session 2"
     case fullDemo = "Full Demo"
 }
 
@@ -28,7 +29,7 @@ struct AppStateView: View {
                     Text($0.rawValue)
                 }
             }
-            .pickerStyle(.wheel)
+            .pickerStyle(.menu)
 
         case .fullDemo:
             ContentView()
@@ -37,6 +38,9 @@ struct AppStateView: View {
             
         case .session1:
             InfoView()
+            
+        case .session2:
+            MyTabView()
         }
     }
 }

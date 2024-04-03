@@ -35,6 +35,6 @@ final class StarsScene: SKScene {
         bg.shader = SKShader(source: code, uniforms: uniforms)
         bg.position = CGPoint(x: size.width/2, y: size.height/2)
         
-        addChild(bg)
+        self.addChild(bg)
     }
 }

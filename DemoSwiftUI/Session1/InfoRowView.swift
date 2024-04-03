@@ -7,12 +7,15 @@
 
 import SwiftUI
 
+// компонент - строка для списка (List)
 struct InfoRowView: View {
+    // модель данных, используется фото и заголовок
     var post: Post
     
     var body: some View {
+        // горизонтольный контейнер
         HStack {
-            // place an image to circle shape
+            // фото с модификаторами изображения
             post.image
                 .resizable()
                 .scaledToFill()
@@ -20,13 +23,15 @@ struct InfoRowView: View {
                 .frame(width: 60, height: 60)
                 .padding(.leading, 12)
             
+            // заголовок поста
             Text(post.title)
-
+            
+            // невидимый Spacer толкает другие элементы влево, так как расположен последним в HStack
             Spacer()
         }
     }
 }
 
 #Preview {
-    InfoRowView(post: Post.data[0])
+    InfoRowView(post: Post.data[1])
 }

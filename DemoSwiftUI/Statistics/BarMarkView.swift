@@ -10,7 +10,7 @@ import Charts
 
 struct BarMarkView: View {
     
-    var parts: [CoursePart]
+    let parts: [CoursePart]
     
     var body: some View {
         Chart(parts) { part in

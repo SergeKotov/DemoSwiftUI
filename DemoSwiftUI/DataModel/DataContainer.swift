@@ -18,15 +18,16 @@ class DataController {
             var itemFetchDescriptor = FetchDescriptor<CoursePart>()
             itemFetchDescriptor.fetchLimit = 1
             
+            // Проверим, если данные в контейнере, если есть - вернем его
             guard try container.mainContext.fetch(itemFetchDescriptor).count == 0 else {
                 return container
             }
             
+            // Модель данных пустая, внесем первоначальные данные в CoreData
             for part in CourseData.partData {
                 part.cells = CourseData.cellData[part.id] ?? []
                 container.mainContext.insert(part)
             }
-            
             return container
         } catch {
             fatalError("Failed to create SwiftData container")

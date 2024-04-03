@@ -29,6 +29,8 @@
 		363FFAAD2B834C6000CB0109 /* MetalShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 363FFAAC2B834C6000CB0109 /* MetalShaders.metal */; };
 		365D0B592A0E39FF00C42C76 /* LinkToAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365D0B582A0E39FF00C42C76 /* LinkToAppView.swift */; };
 		367918742A0E6DF4000E89CD /* AppInStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367918732A0E6DF4000E89CD /* AppInStore.swift */; };
+		3679F1DD2BBADC7000CEAEEF /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3679F1DC2BBADC7000CEAEEF /* MyTabView.swift */; };
+		3679F1DF2BBB036D00CEAEEF /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3679F1DE2BBB036D00CEAEEF /* SheetView.swift */; };
 		368F82242A24B474009480BC /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368F82232A24B474009480BC /* AttributedString.swift */; };
 		368F82272A24CCBF009480BC /* UIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368F82262A24CCBF009480BC /* UIKitView.swift */; };
 		368F82292A24CF17009480BC /* GeometricShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368F82282A24CF17009480BC /* GeometricShapes.swift */; };
@@ -78,6 +80,8 @@
 		363FFAAC2B834C6000CB0109 /* MetalShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MetalShaders.metal; sourceTree = "<group>"; };
 		365D0B582A0E39FF00C42C76 /* LinkToAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkToAppView.swift; sourceTree = "<group>"; };
 		367918732A0E6DF4000E89CD /* AppInStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInStore.swift; sourceTree = "<group>"; };
+		3679F1DC2BBADC7000CEAEEF /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
+		3679F1DE2BBB036D00CEAEEF /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		368F82232A24B474009480BC /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
 		368F82262A24CCBF009480BC /* UIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitView.swift; sourceTree = "<group>"; };
 		368F82282A24CF17009480BC /* GeometricShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricShapes.swift; sourceTree = "<group>"; };
@@ -252,6 +256,8 @@
 			isa = PBXGroup;
 			children = (
 				36D04A5C2B864470003982D6 /* AppStateView.swift */,
+				3679F1DC2BBADC7000CEAEEF /* MyTabView.swift */,
+				3679F1DE2BBB036D00CEAEEF /* SheetView.swift */,
 				363451BA2B7E0BFA003B13CA /* ColorTheme.swift */,
 				363451B82B7D1C85003B13CA /* GroupBoxWrapper.swift */,
 				363451BC2B7E1C40003B13CA /* ImageStyler.swift */,
@@ -287,7 +293,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					36B3D6CA297E851D00086742 = {
 						CreatedOnToolsVersion = 14.2;
@@ -332,6 +338,7 @@
 				363451AA2B7BFA14003B13CA /* PartCellView.swift in Sources */,
 				368F82242A24B474009480BC /* AttributedString.swift in Sources */,
 				3608D199297FD3A500ECD08B /* InfoDetailsView.swift in Sources */,
+				3679F1DD2BBADC7000CEAEEF /* MyTabView.swift in Sources */,
 				367918742A0E6DF4000E89CD /* AppInStore.swift in Sources */,
 				368F822B2A24D0C7009480BC /* ShrinkingSquaresView.swift in Sources */,
 				36B9FDED2A0D2D2B004F8FAF /* EarthView.swift in Sources */,
@@ -344,6 +351,7 @@
 				36B3D6E6297E8AEB00086742 /* InfoView.swift in Sources */,
 				36CCC1022B71272A006A72A2 /* SwiftQuiz.swift in Sources */,
 				363FFAAB2B834B3800CB0109 /* EffectSandbox.swift in Sources */,
+				3679F1DF2BBB036D00CEAEEF /* SheetView.swift in Sources */,
 				368F82292A24CF17009480BC /* GeometricShapes.swift in Sources */,
 				363451A42B7BC13A003B13CA /* QuizResultView.swift in Sources */,
 				363451B92B7D1C85003B13CA /* GroupBoxWrapper.swift in Sources */,
@@ -383,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -444,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
