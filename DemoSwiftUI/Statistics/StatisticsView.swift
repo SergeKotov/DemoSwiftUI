@@ -26,8 +26,7 @@ struct StatisticsView: View {
 }
 
 #Preview {
-    let container = DataController.container(inMemory: true)
-    
+    let container = DataController.container(inMemory: true)    
     return StatisticsView()
         .modelContainer(container)    
 }

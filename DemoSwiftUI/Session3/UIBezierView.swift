@@ -25,7 +25,7 @@ struct BezierShape: Shape {
         let varY = CGFloat(30)
         let deltaX = CGFloat(20)
         let height = CGFloat(300)
-        let probability = 0.5
+        let proLimit = 0.5
         
         let ground = UIBezierPath()
         let beginPoint = CGPoint(x: 0, y: 0)
@@ -34,8 +34,6 @@ struct BezierShape: Shape {
         // Create top surface
         let shelfX: CGFloat = 3
         var pointX: CGFloat = 0, pointY: CGFloat = 0
-        let maxDeltaY = UInt32(varY)
-        let proLimit = probability < 0.5 ? 0.5 : probability > 1.0 ? 1.0 : probability
         var up = true
         
         var downToZero = false
@@ -47,7 +45,7 @@ struct BezierShape: Shape {
             let proValue = (1.0 - (1.0 - proLimit) * pointY / height)
             let k: CGFloat = up ? 1.0 : -1.0
             let direction = chance(Float(proValue)) ? k : -k
-            let valueY = direction * CGFloat(arc4random_uniform(maxDeltaY))
+            let valueY = direction * CGFloat.random(in: 0..<varY)
             pointY += valueY
             if pointY > height {
                 pointY = height;

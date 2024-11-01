@@ -1,8 +1,7 @@
 //
 //  ShrinkingSquaresView.swift
 //  DemoSwiftUI
-//
-//  Created by Serge Kotov on 29.05.2023.
+//  From "SwiftUI by example" by Paul Hudson
 //
 
 import SwiftUI

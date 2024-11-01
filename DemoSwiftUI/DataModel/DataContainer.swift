@@ -34,9 +34,10 @@ class DataController {
         }
     }
     
-    static var previewCourse: [CoursePart] {
+    // MARK: Content for previews
+    
+    static func getPreviewCourse(_ container: ModelContainer) -> [CoursePart] {
         do {
-            let container = DataController.container(inMemory: true)
             let fetchDescriptor = FetchDescriptor<CoursePart>()
             return try container.mainContext.fetch(fetchDescriptor)
         } catch {
@@ -44,7 +45,7 @@ class DataController {
         }
     }
     
-    static var previewCoursePart: CoursePart {
-            return previewCourse[0]
+    static func getPreviewCoursePart(_ container: ModelContainer) -> CoursePart {
+        getPreviewCourse(container)[0]
     }
 }

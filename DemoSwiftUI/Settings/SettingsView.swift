@@ -20,7 +20,7 @@ struct SettingsView: View {
         Form {
             Section {
                 // show one of two links to apps in the AppStore
-                Toggle("Show a secret link", isOn: $linkOn.animation())
+                Toggle("Show a secret link", isOn: $linkOn)
                     .onChange(of: linkOn) {
                         if linkOn {
                             // toogle between two links for every set on
@@ -38,7 +38,7 @@ struct SettingsView: View {
                 Text("Color theme appearance: ") +
                 Text("\(colorScheme == .dark ? "dark mode" : "light mode")").bold()
                 
-                Picker("Color theme", selection: $selectedTheme.animation()) {
+                Picker("Color theme", selection: $selectedTheme) {
                     ForEach(ColorTheme.Theme.allCases, id: \.self) {
                         Text($0.rawValue).tag($0)
                     }

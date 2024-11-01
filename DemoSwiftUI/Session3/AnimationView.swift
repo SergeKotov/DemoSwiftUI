@@ -17,13 +17,14 @@ struct AnimationView: View {
             .frame(width: 160, height: 160)
             .cornerRadius(80)
             .shadow(radius: 12)
-            .padding(.top, 20)
             .scaleEffect(scale)
         // try: .rotationEffect(Angle(radians: scale))
             .animation(.easeOut, value: scale)
         // try:.interpolatingSpring(mass: 0.5, stiffness: 0.5, damping: 0.5, initialVelocity: 10)
             .onTapGesture {
-                self.scale *= CGFloat.random(in: 0.6...1.8)
+//                withAnimation(.easeOut) { // альтернативный способ для animation
+                    scale *= CGFloat.random(in: 0.6...1.8)
+//                }
             }
     }
 }

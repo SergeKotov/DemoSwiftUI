@@ -10,7 +10,7 @@ import SwiftData
 
 @Model
 class CoursePart {
-    let id: String
+    var id: String
     var title: String
     var passed: Bool
     var date: Date?

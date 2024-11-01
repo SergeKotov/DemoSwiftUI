@@ -10,11 +10,11 @@ import SwiftData
 
 @Model
 class SwiftQuiz {
-    let partId: String
-    let date: Date
-    let questionCount: Int
-    let passedCount: Int
-    let duration: Int // seconds
+    var partId: String
+    var date: Date
+    var questionCount: Int
+    var passedCount: Int
+    var duration: Int // seconds
     
     init(partId: String, date: Date = .now, questionCount: Int, passedCount: Int, duration: Int) {
         self.partId = partId

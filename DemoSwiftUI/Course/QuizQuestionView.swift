@@ -80,5 +80,7 @@ struct QuizQuestionView: View {
 }
 
 #Preview {
-    QuizQuestionView(part: DataController.previewCoursePart, quizzing: .constant(true))
+    let container = DataController.container(inMemory: true)
+    QuizQuestionView(part: DataController.getPreviewCoursePart(container), quizzing: .constant(true))
+        .modelContainer(container)
 }

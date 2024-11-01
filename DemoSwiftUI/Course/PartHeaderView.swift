@@ -52,5 +52,7 @@ struct PartHeaderView: View {
 }
 
 #Preview {
-    PartHeaderView(part: DataController.previewCoursePart)
+    let container = DataController.container(inMemory: true)
+    PartHeaderView(part: DataController.getPreviewCoursePart(container))
+        .modelContainer(container)
 }

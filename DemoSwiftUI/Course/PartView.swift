@@ -22,5 +22,7 @@ struct PartView: View {
 }
 
 #Preview {
-    PartView(part: DataController.previewCoursePart)
+    let container = DataController.container(inMemory: true)
+    PartView(part: DataController.getPreviewCoursePart(container))
+        .modelContainer(container)
 }

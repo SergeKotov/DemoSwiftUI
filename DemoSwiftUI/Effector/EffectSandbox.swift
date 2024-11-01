@@ -37,14 +37,16 @@ struct EffectSandbox: View {
                         .resizable()
                         .modifier(ImageStyler(dim: 250))
                         .visualEffect { content, proxy in
-                            content
-                                .distortionEffect(ShaderLibrary.complexWave(
-                                    .float(startDate.timeIntervalSinceNow),
-                                    .float2(proxy.size),
-                                    .float(range),
-                                    .float(4),
-                                    .float(5)
-                                ), maxSampleOffset: .zero)
+                            MainActor.assumeIsolated { // migrating to Swift 6 with concurrency checking
+                                content
+                                    .distortionEffect(ShaderLibrary.complexWave(
+                                        .float(startDate.timeIntervalSinceNow),
+                                        .float2(proxy.size),
+                                        .float(range),
+                                        .float(4),
+                                        .float(5)
+                                    ), maxSampleOffset: .zero)
+                            }
                         }
                 }
                 

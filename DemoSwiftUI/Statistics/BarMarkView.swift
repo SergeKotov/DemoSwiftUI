@@ -29,5 +29,7 @@ struct BarMarkView: View {
 }
 
 #Preview {
-    BarMarkView(parts: DataController.previewCourse)
+    let container = DataController.container(inMemory: true)
+    return BarMarkView(parts: DataController.getPreviewCourse(container))
+        .modelContainer(container)
 }

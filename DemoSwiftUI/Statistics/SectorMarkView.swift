@@ -16,14 +16,14 @@ struct SectorMarkView: View {
         Chart(parts) { part in
             SectorMark(
                 angle: .value(
-                    Text(verbatim: part.title),
+                    Text(part.title),
                     part.cells.count
                 ),
                 innerRadius: .ratio(0.4)
             )
             .foregroundStyle(
                 by: .value(
-                    Text(verbatim: part.title),
+                    Text(part.title),
                     part.title
                 )
             )
@@ -36,6 +36,8 @@ struct SectorMarkView: View {
 }
 
 #Preview {
-    SectorMarkView(parts: DataController.previewCourse)
+    let container = DataController.container(inMemory: true)
+    return SectorMarkView(parts: DataController.getPreviewCourse(container))
+        .modelContainer(container)
 }
 

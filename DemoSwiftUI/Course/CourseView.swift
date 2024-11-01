@@ -29,8 +29,7 @@ struct CourseView: View {
 }
 
 #Preview {
-    let container = DataController.container(inMemory: true)
-    
+    let container = DataController.container(inMemory: true)    
     return CourseView()
         .modelContainer(container)
 }

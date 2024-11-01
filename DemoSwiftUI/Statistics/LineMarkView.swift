@@ -37,5 +37,7 @@ struct LineMarkView: View {
 }
 
 #Preview {
-    LineMarkView(parts: DataController.previewCourse)
+    let container = DataController.container(inMemory: true)
+    return LineMarkView(parts: DataController.getPreviewCourse(container))
+        .modelContainer(container)
 }

@@ -27,5 +27,7 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView(part: DataController.previewCoursePart)
+    let container = DataController.container(inMemory: true)
+    QuizView(part: DataController.getPreviewCoursePart(container))
+        .modelContainer(container)
 }
